@@ -1,2 +1,3 @@
 # Portifolio
-Portifólio feito para a cadeira de Desenvolvimento WEB do curso Sistemas de Informação
+
+Esse foi o projeto onde eu aprendi a fazer um portifólio simples usando apenas HTML e CSS
