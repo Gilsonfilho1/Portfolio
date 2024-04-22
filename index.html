@@ -1,79 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Gilson Filho</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="index.css">
-    </head>
+<html lang="pt-BR">
 
-    <body>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="projetos.html">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <header>
-                <div class="centralizar">
-                    <img src="./imagens/imagem.jpeg">
-                </div>
-                <h1>Gilson Filho</h1>
-                <h2>Desenvolvedor de software</h2>
-            </header>
-    
-            <main>
-                <section>
-                    <h3>Sobre mim</h3>
-                    <p>
-                        Olá, meu nome é Gilson Filho, tenho 19 anos, estou cursando Sistemas de 
-                        informação na Universidade Federal do Ceará (UFC). Sempre gostei de tecnologia
-                        e atualmente estou estudando e fazendo alguns projetos para treinar minhas
-                        habilidades, estou gostando bastante do desenvolvimento front-end, e de desenvolvimento
-                        de jogos com a unity usando C#.
-                    </p>
-                </section>
-                <section>
-                    <h3>Formação</h3>
-                    <p>
-                        Atualmente estou cursando Sistemas de informação na Universidade Federal do Ceará. E alguns
-                        cursos fora da faculdade para treinar ainda mais as minhas habilidades.
-                    </p>
-                </section>
-                <section>
-                    <h3>Cursos</h3>
-                    <p>
-                        Tenho um curso completo de Desenvolvimento Básico na Udemy e atualmente estou fazendo outro
-                        curso mais aprofundado de Front-end, além de um curso de .net que a empresa JN Moura ofertou
-                        gratuitamente.
-                    </p>
-                </section>
-            </main>
-    
-            <footer>
-                <a href="https://github.com/Gilsonfilho1" target="_blank" rel="noopener noreferrer">
-                    <img src="./imagens/github.svg"></img>
-                    <p>Github</p>
-                </a>
-                <a href="https://www.linkedin.com/in/gilson-filho-a6916722b/" target="_blank" rel="noopener noreferrer">
-                    <img src="./imagens/linkedin.svg"></img>
-                    <p>Linkedin</p>
-                </a>
-                <a href="https://www.instagram.com/gilson.filhodm/" target="_blank" rel="noopener noreferrer">
-                    <img src="./imagens/instagram.svg"></img>
-                    <p>Instagram</p>
-                </a>
-            </footer>
-        </div>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    </body>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Alunos</h1>
+        <form id="form-aluno">
+            <div>
+                <label for="matricula">Matrícula</label>
+                <input type="text" name="matricula" id="matricula" placeholder="Digite a matricula do(a) aluno(a)">
+            </div>
+            <div>
+                <label for="nome">Nome*</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite o nome do(a) aluno(a)">
+            </div>
+            <div>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" placeholder="Digite a idade do(a) aluno(a)">
+            </div>
+            <div>
+                <label for="genero">Gênero</label>
+                <input type="text" name="genero" id="genero" placeholder="Digite o genero do(a) aluno(a)">
+            </div>
+            <div>
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Gênero</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="alunos">
+                <!-- Alunos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
